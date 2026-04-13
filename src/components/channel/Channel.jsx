@@ -1,0 +1,16 @@
+import { Button } from "@mui/material"
+import { Link } from "react-router"
+import { useParams } from "react-router"
+
+const Channel = () =>{
+    
+    const params = useParams()
+    return (
+        <Link to={"/"}>
+            <Button>Main</Button>
+        </Link>
+    )
+}
+
+
+export default Channel
