@@ -5,8 +5,9 @@ import { useParams } from "react-router"
 const Channel = () =>{
     
     const params = useParams()
+    console.log(params)
     return (
-        <Link to={"/"}>
+        <Link to={ "/" } >
             <Button>Main</Button>
         </Link>
     )
