@@ -1,18 +1,16 @@
 import { Box } from "@mui/material"
-import { Route, Routes } from "react-router"
-import  { Main, Channel, Navbar, VideoDetail, Search } from "../"
+import { Outlet, useLocation } from "react-router"
+import  { Navbar } from "../"
 
 const App = () =>{
 
     return (
-        <Box>
+        <Box sx={{ minHeight:"90vh"}}>
             <Navbar />
-            <Routes>
-                <Route path="/" element={ <Main />} />
-                <Route path="/channel/:id" element={ <Channel />} />
-                <Route path="/video/:id" element={ <VideoDetail />} />
-                <Route path="/search/:id" element={ <Search />} />
-            </Routes>
+            <Box sx={{ pt:"72px"}} >
+                <Outlet />
+            </Box>
+            
         </Box>
     )
 }

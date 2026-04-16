@@ -3,6 +3,11 @@
   color: white;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .searchBar-paper{
   position: relative;
@@ -10,15 +15,44 @@
   display: grid;
   background-color: rgb(25, 24, 24);
   grid-template-columns: 90% 10%;
+  border: none;
+  outline: none;
 }
 
 .search-bar {
   border: none;
   outline: none;
   background: rgb(25, 24, 24);
-  width: calc(100% - 20px);
+  width: 100%;
   padding-left: 20px;
   border-radius: 20px 0 0 20px;
   color: white;
   font-size: 20px;
+}
+
+.category-btn{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #3f3f3f;
+  font-weight: bold;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  gap: 10px;
+
+  padding: 7px 10px;
+  margin: 10px 0px;
+  translate: all 0.3s ease;
+}
+
+.category-btn:hover{
+  background-color: #e4e2e3;
+}
+
+
+.category-btn:hover span{
+  color: rgb(48, 47, 47);
 }
